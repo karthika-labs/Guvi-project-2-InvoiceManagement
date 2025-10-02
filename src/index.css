@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+
+.righteous-regular {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.pdf-safe {
+  background-color: #111827; /* Tailwind bg-gray-900 */
+  color: #ffffff; 
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1024px;
+  width: 100%;
+}
+
+.pdf-safe .avatar-border {
+  border: 1px solid #374151; /* border-gray-700 */
+}
+
+.pdf-safe .status-bg-paid {
+  background-color: rgba(4, 120, 87, 0.25); /* bg-green-800/40 */
+   display: flex;   
+  align-items: center;   
+  justify-content: center; 
+
+}
+
+.pdf-safe .status-bg-pending {
+  background-color: rgba(202, 138, 4, 0.25); /* bg-yellow-800/40 */
+}
+
+.pdf-safe .status-dot-paid {
+  background-color: #10b981; /* bg-green-500 */
+   width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+ 
+}
+
+.pdf-safe .status-dot-pending {
+  background-color: #facc15; /* bg-yellow-400 */
+}
+
+.pdf-safe .status-text-paid {
+  color: #34d399; /* text-green-400 */
+  font-weight: 700;
+   font-size:large;
+ 
+   
+}
+
+.pdf-safe .status-text-pending {
+  color: #facc15; /* text-yellow-400 */
+  font-weight: 700;
+  font-size:large;
+   display: flex;
+  align-items: center; 
+}
+
+.pdf-safe .table-header {
+  background-color: #1f2937; /* bg-gray-800 */
+}
+
+.pdf-safe .table-border {
+  border: 1px solid #374151; /* border-gray-700 */
+}
+
+.pdf-safe .table-subtotal {
+  color: #facc15; /* text-yellow-300 */
+}
+
+.pdf-safe .net-total-bg {
+  background-color: rgba(134, 239, 172, 0.2); /* bg-green-400/20 */
+}
+
+.pdf-safe .net-total-text {
+  color: #10b981; /* text-green-500 */
+  font-size: 1.5rem;
+}
+
+
+
+.pdf-download-safe {
+  background-color: white; /*  bg for PDF */
+  color: black; 
+}
+
+
+.text-color-screen {
+  color: #fff;
+}
+  
+.text-color-invoice{
+  color:#6b21a8;
+}
+
+
+@media print {
+ 
+
+body {
+    margin: 0;      
+    padding: 1cm;    
+  }
+
+  .pdf-safe {
+    background: #fff !important;
+    color: #000 !important;
+  }
+  
+
+      thead tr th {
+        background-color: #f3f4f6;
+        color:#000000 ;
+      }
+
+     .text-color-pdf {
+    color: #000 !important;
+  }
+   
+}
+ .pdf-safe-status {
+    background-color: transparent !important;
+  }
+  .pdf-safe-dot {
+    display: none !important;
+  }
+
+
